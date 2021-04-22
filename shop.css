@@ -66,6 +66,8 @@ header .nav{
     padding-left: 20px;
 }
 
+#category ul li:hover{
+    color:#aa5c55;}
 header .icon{
     position:absolute;
     top:52px;
@@ -87,6 +89,7 @@ font-size: 25px;
 padding-right: 20px;
 color:rgb(189, 189, 189);
 }
+    
 #category ul li:nth-child(1){
     color: #aa5c55;
 }
@@ -109,8 +112,9 @@ color:rgb(189, 189, 189);
     padding-right: 20px;
     color:black;
     font-weight: 400;
-
 }
+#page ul li:hover{
+    color: #aa5c55;
 #page{
     margin-top: 50px;
 }
