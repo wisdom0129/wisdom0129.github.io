@@ -1,0 +1,222 @@
+
+
+html{
+    background-color: white;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+  }
+ /*네비게이션*/
+ header{
+    position:fixed;
+    top: 0;
+    left:0;
+    right:0;
+    width:100%;
+    min-width: 1280px;
+    z-index: 990;
+}
+a{
+    text-decoration: none;
+  }
+  a :hover{
+    color:#aa5c55;
+  }
+  .menus :hover{
+    color:#aa5c55;
+  }
+  #logo p{
+      margin: 0;
+  }
+.menus{
+    color:#aa5c55;
+}
+.row {
+    display: inline;
+    width:1600px;
+    text-align: center;
+    max-width: 1600px;
+    margin:0 auto;
+    padding:40px 40px 0;
+}
+.row img{
+    width:80px;
+}
+header .nav{
+    position: absolute;/* 부모태그를 기준으로 움직이는 것 / 부모태그가 relative, absolution, fixed 일때 부모를 따라가지만 없을땐 body를 따라감*/
+    top:44px;
+    left:70px;
+    display: table;/*부모태그에 table선언 자식태그에 table-cell선언으로 하면 동일한 간격으로 버러짐 +아래 fixed 필요*/
+    table-layout: fixed; /*동일한 넓이로 넓어진다.*/
+}
+.row a{
+    color: black;
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+    padding-right: 50px;
+    display: inline;
+}
+.icon a{
+    padding:0;
+  }
+.row svg{
+    width: 40px;
+    height: 30px;
+    color:black;
+    padding-left: 20px;
+}
+
+header .icon{
+    position:absolute;
+    top:52px;
+    right:70px;
+    float: right;
+}
+  
+input{
+    border:none;
+}
+.join{
+    border:1px solid white;
+    width: 600px;
+    text-align: center;
+    background-color:white;
+    margin:auto;
+}
+hr{
+    background-color: #e3e3e3;
+    height: 1px;
+    border: 0;
+    width: 600px;
+    
+}
+select{
+    border:none;
+    background-color: white;
+}
+h2{
+    font-weight:normal;
+    color: #636363;
+    margin:85px 0px 15px 0px;
+}
+p{
+    margin:10px 0px 2px 0px;
+}
+.gender{
+    text-align: left;
+}
+.hr2{
+    background-color: white;
+    margin:6px 0px 6px 0px;
+}
+h2{
+    text-align:center;
+    color:#683A36;
+    margin-top: 170px;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.agree{
+    border:1px solid white;
+    width: 600px;
+    background-color:white;
+    margin:auto;
+}
+.agreetext{
+    font-size: 15px;
+    color:#7b7a7a;
+    font-weight: bold;
+}
+input[type=checkbox]{
+transform: scale(2); /* Safari and Chrome */
+
+}
+.checkbox{
+    background-color: #ffffff;
+    margin:none;
+    border-top:1px solid #bfbfbf;
+    padding-top:10px;
+}
+.agreetext2{
+    font-size: 13px;
+    color:#7d7d7d;
+}
+.agreetext3{
+    font-size: 12px;
+    color:#683A36;
+}
+input[type=button]{
+    border:1px solid #bfbfbf; 
+}
+.agreetext4{
+    font-size: 13px;
+    color:#828282;
+    margin: 0px 0px 0px 97px;
+}
+.agreetext4 span{
+    font-size: 13px;
+    color:#636262;
+    font-weight: bold;
+}
+.agreetext5{
+    font-size: 12px;
+    color: #683A36;
+}
+.last{
+    font-size: 20px;
+    padding: 22px 40px 20px 40px;
+    width: 600px;
+    text-align: center;
+    background-color: #683A36;
+    margin: 20px auto;
+    color:white;
+    font-weight: 400;
+    margin-top: 25px;
+    
+}
+
+
+footer{
+    margin-top: 250px;
+    background-color: #683A36;
+    padding:100px;
+    display:flex;
+    justify-content: space-between;
+}
+#company{
+    margin-top: 100px;
+    color: white;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 1.8em;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#footer_menu {
+    display: flex;   
+    color: white;
+}
+#footer_menu h3{
+    font-size: 35px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#customer{
+    margin-right: 160px;
+}
+
+#store{
+    margin-right: 160px;
+}
+#footer_menu ul li{
+    padding-bottom: 5px;
+    font-weight: 200;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    list-style: none;
+}
+#footer_menu ul{
+    padding-left: 0;
+}

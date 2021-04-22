@@ -1,0 +1,339 @@
+/* hide scrollbar /  스크롤바의 width값과 height값을 1px로 한다. */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/*스크롤바 옆에 뜨는 스크롤 버튼을 1px로 하여 숨긴다.*/
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+* {
+  box-sizing: border-box;/*보더를 포함한 사이즈가 기준이다. 보더의 두께가 달라도 두께를 포함한 길이가 같게 한다.*/
+  overflow-x: scroll;
+}
+
+body{
+  padding: 0px;
+  margin: 0px;
+}
+
+/*네비게이션*/
+a{
+  text-decoration: none;
+}
+a :hover{
+  color:black;
+}
+.menus :hover{
+  color:black;
+}
+#my a{
+  padding:0;
+}
+
+header{
+  position:fixed;
+  top: 0;
+  left:0;
+  right:0;
+  width:100%;
+  min-width: 1280px;
+  z-index: 990;
+}
+.row {
+  display: inline;
+  width:1600px;
+  text-align: center;
+  max-width: 1600px;
+  margin:0 auto;
+  padding:40px 40px 0;
+}
+.row img{
+  width:80px;
+}
+header .nav{
+  position: absolute;/* 부모태그를 기준으로 움직이는 것 / 부모태그가 relative, absolution, fixed 일때 부모를 따라가지만 없을땐 body를 따라감*/
+  top:44px;
+  left:70px;
+  display: table;/*부모태그에 table선언 자식태그에 table-cell선언으로 하면 동일한 간격으로 버러짐 +아래 fixed 필요*/
+  table-layout: fixed; /*동일한 넓이로 넓어진다.*/
+}
+.menus a{
+  color: white;
+  font-size: 28px;
+  font-family: 'Playfair Display', serif;
+  padding-right: 50px;
+  display: inline;
+}
+
+.row svg{
+  width: 60px;
+  height: 30px;
+  color:white;
+  padding-left: 20px;
+}
+
+header .icon{
+  position:absolute;
+  top:52px;
+  right:70px;
+  float: right;
+}
+
+#main{
+  position: relative;
+
+}
+/*본문*/
+#wrap{
+  width: 7300px;
+  height: 100vh;
+  display: flex;
+}
+
+/*비디오*/
+#video video{
+  max-width:1920px;
+  object-fit:cover;
+  animation-name: move2;
+  animation-duration: 7s;
+}
+#video{
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+@keyframes move2{
+  from{ opacity: 0%;
+
+  }to{
+      opacity:100%;
+  }
+}
+@keyframes move{
+  0% {  transform: translate(0px, 200px); opacity: 0%;}
+  100% { transform: translate(0px, 0px); opacity: 100%;}
+}
+
+
+/*메인타이틀*/
+#main_title {
+  position: absolute;
+  top:25%;
+  left: 70px;
+  z-index: 990;
+  animation-name: move;
+  animation-duration: 7s;
+}
+#main_title #big_title{
+  font-family: 'Playfair Display', serif;
+  font-size: 120px;
+  color: white;
+  line-height: 130px;
+  margin-bottom: 0;
+}
+#big_title{
+  margin-top:0;
+}
+#mini_title{
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  color: white;
+  margin-left: 5px;
+  margin-bottom: 30px;
+}
+#main_title{
+  color:white;
+  font-size: 18px;
+  margin-top: 0px;
+}
+#sub_title1{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 24px;
+}
+#sub_title2 {
+  color: white;
+  margin:0;
+  display: inline-block;
+}
+
+#sub_title2_svg{
+  color: white;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+#main_button{
+  display: flex;
+  align-content: center;
+  border-bottom: 0.5px solid white;
+  width: 132px;
+  margin-top: 90px;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+/*새로운 상품*/
+#new_product{
+  display: flex;
+  background-color: #DFC3B4;
+  padding-left: 200px;
+  overflow-y: hidden;
+  height: 100vh;
+  margin-bottom: 0;
+  align-items: center;
+}
+
+/*새로운 상품 텍스트*/
+.new_text{
+  margin-left: 100px;
+}
+.new_text1{
+ font-size: 120px; 
+ color: #683A36;
+ font-family: 'Playfair Display', serif;
+ margin-bottom: 0;
+ margin-top: 0;
+ font-weight: 600;
+ width:620px;
+ line-height: 1.1em;
+ margin-right: 0;
+}
+
+.new_text2{
+  margin:0;
+  font-size: 46px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  margin-top: 80px;
+  color: #683A36;
+}
+
+.new_text3{
+  color:#683A36;
+  font-size: 18px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.view_more{
+    font-size: 16px;
+    color: #683A36;
+    font-family: 'Playfair Display', serif;
+    display: inline-block;
+    margin-right:0px;
+    margin:0;
+}
+.new_view_more{
+    color: #683A36;   
+    display: inline-block;
+    margin-top:5px;
+    border-bottom: 0.5px solid #683A36;
+    margin-top: 50px;
+}
+#new_image1{
+  max-width: auto;
+  height: 800px;
+  margin:0;
+  padding:0;
+  margin-top: 20px;
+}
+#new_images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#new_image2{
+  max-width: auto;
+  height: 600px;
+}
+#new_image3{
+  max-width: auto;
+  height: 600px;
+
+}
+#new_image4{
+  max-width: auto;
+  height: 600px;
+}
+
+#new1{
+  margin-top:80px;
+}
+#new2{
+  margin-bottom:200px;
+  margin-left: 50px;
+}
+#new3{
+  margin-top:200px;
+  margin-left: 50px;
+  margin-right: 160px;
+}
+
+/*베스트 상품*/
+#best{
+  background-color: #EEEAD5;
+  display: flex;
+  align-items: center;
+}
+#best_image1{
+  width: 650px;
+  margin:0;
+}
+#best_text{
+  text-align: right;
+  margin-right: 100px;
+}
+#best_text1{
+  width: 660px;
+}
+.best_image2{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+#lips{
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+#lips img{
+  width: 300px;
+}
+#best_lip1{
+  margin-bottom: 80px;
+}
+#lips p{
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #683A36;
+  margin:0;
+  font-size: 20px;
+  font-weight: 600;
+}
+#contents{
+  display: flex;
+  align-items: center;
+  padding-left: 190px;
+  background-color: #683A36;
+
+}
+#contents h1{
+font-size: 80px;
+margin-right: 220px;
+font-family: 'Playfair Display', serif;
+font-weight: 400;
+color:white;
+}
+.best_image2-1 img:nth-child(2){display:none;}
+.best_image2-1:hover img:first-child{display:none;}
+.best_image2-1:hover img:nth-child(2){display:block;}
+.bew_image2-2{
+  margin-right: 20px;
+}
