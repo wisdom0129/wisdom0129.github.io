@@ -114,7 +114,7 @@ header .icon{
   }
 }
 @keyframes move{
-  0% {  transform: translate(0px, 200px); opacity: 0%;}
+  0% {  transform: translate(0px, 200px); opacity: 20%;}
   100% { transform: translate(0px, 0px); opacity: 100%;}
 }
 
