@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/uiux.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Staatliches&display=swap" rel="stylesheet">
+    <title>UIUX</title>
+    <script>
+        (function() {
+        function scrollHorizontally(e) {
+            e = window.event || e;
+            var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+            document.documentElement.scrollLeft -= (delta*40);
+            document.body.scrollLeft -= (delta*40);
+            e.preventDefault();
+        }
+        if (window.addEventListener) {
+            window.addEventListener("mousewheel", scrollHorizontally, false);
+            window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+        } else {
+            window.attachEvent("onmousewheel", scrollHorizontally);
+        }
+        })();
+    </script>
+</head>
+<body>
+
+    <img id="background" src="./img/line.jpg">
+    <div id="wrap">
+        <nav>
+            <ul>
+                <li><a id="logo" href="index.html">WISDOM</a></li>
+                <li class="nav_sub" id="nav_about"><a href="about_me.html"> ABOUT ME</a></li>
+                <li class="nav_sub" id="nav_uiux"><a href="uiux.html">UI/UX</a></li>
+                <li class="nav_sub"><a href="etc.html">ETC.</a></li>
+                <li class="nav_sub"><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div id="content1">
+            <img src="./img/clear.png" width="100%">
+        </div>
+        <div class="contents" id="content2">
+            <img src="./img/uiux1.jpg" width="120%">
+            <h2>진에어 App</h2>
+            <p>기존 진에어 App의 문제점을 보완하고 개인화가 강화된 App을 디자인하였습니다.</p>
+        </div>
+        <div class="contents" id="content3">
+            <a href="burgerking.html" target="_blank"><img src="./img/uiux2.jpg" width="120%"></a>
+            <h2>버거킹 App Icon</h2>
+            <p>버거킹의 App에서 사용되는 Icon을 아이덴티티를 살린 아이콘을 제작하였습니다.</p>
+        </div>
+        <div class="contents" id="content4">
+            <a href="maeketb.html">><img src="./img/uiux3.jpg" width="120%"></a>
+            <h2>마켓비 App</h2>
+            <p>기존의 문제점을 보완하여 사용자가 더 편리하게 이용할 수 있도록 디자인하였습니다.</p>
+        </div>
+        <div class="contents" id="content5">
+            <a href="https://wisdom0129.github.io/" target="_blank"><img src="./img/uiux4.jpg" width="120%"></a>
+            <h2>3CE Web</h2>
+            <p>3CE의 아이덴티티를 부각 시킬 수 있는 Web을 디자인 및 구현하였습니다.</p>
+        </div>
+        <div class="contents" id="content6">
+            <a href="tvn.html"><img src="./img/uxui5.jpg" width="120%"></a>
+            <h2>tvN Web</h2>
+            <p>tvN의 톡톡튀는 아이덴티티를 살리고 편리한 웹 환경을 고려하여 디자인하였습니다.</p>
+        </div>
+        <div id="content7">
+            <img src="./img/clear.png" width="10px">
+        </div>
+    </div>
+
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./css/etc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Staatliches&display=swap" rel="stylesheet">
+    <title>UIUX</title>
+    <script>
+        (function() {
+        function scrollHorizontally(e) {
+            e = window.event || e;
+            var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
+            document.documentElement.scrollLeft -= (delta*40);
+            document.body.scrollLeft -= (delta*40);
+            e.preventDefault();
+        }
+        if (window.addEventListener) {
+            window.addEventListener("mousewheel", scrollHorizontally, false);
+            window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+        } else {
+            window.attachEvent("onmousewheel", scrollHorizontally);
+        }
+        })();
+    </script>
+</head>
+<body>
+
+    <img id="background" src="./img/line.jpg">
+    <div id="wrap">
+        <nav>
+            <ul>
+                <li><a id="logo" href="index.html">WISDOM</a></li>
+                <li class="nav_sub" id="nav_about"><a href="about_me.html"> ABOUT ME</a></li>
+                <li class="nav_sub" id="nav_uiux"><a href="uiux.html">UI/UX</a></li>
+                <li class="nav_sub"id="nav_etc"><a href="etc.html">ETC.</a></li>
+                <li class="nav_sub"><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div id="content1">
+            <img src="./img/clear.png" width="1500px">
+        </div>
+        <div class="contents" id="content2">
+            <a href="picture.html"><img src="./img/atc.png" width="800px" ></a>
+            <h2>실사의 위력</h2>
+            <p>주어진 3가지의 조건을 이용하여 하나의 Look&Feel로 메시지를 전달한다. 나의 상상이 현실이 된다면 하는 궁금증에서 시작된 프로젝트</p>
+        </div>
+        <div class="contents" id="content3">
+            <a href="color.html"><img src="./img/etc2.jpg" width="800px"></a>
+            <h2>형태와 컬러</h2>
+            <p>무의식의 형태를 찾아 의식으로 변화하는 과정을 담은 포스터이다. 선들이 이어져 만들어진 지문을 가지고 과학수사를 주제로 포스터를 제작하였다.</p>
+        </div>
+        <div class="contents" id="content4">
+            <a href="https://wisdom0129.github.io/communicationdesign.github.io/kr_shape.html" target="_blank"><img src="./img/etc3.jpg" width="800px"></a>
+            <h2>SM명조 타이포그래피 에세이</h2>
+            <p>디자인 요소 중 하나인 타이포그래피를 연구하기 위하여 국문체 SM명조를 선정하고 이에 대한 연구 결과를 웹 콘텐츠로 만들어 구현하였다.</p>
+        </div>
+        <div class="contents" id="content5">
+            <a href="https://wisdom0129.github.io/communicationdesign.github.io/en_shape.html" target="_blank"><img src="./img/etc4.jpg" width="800px" ></a>
+            <h2>Sabon 타이포그래피 에세이</h2>
+            <p>디자인 요소 중 하나인 타이포그래피를 연구하기 위하여 영문체 Sabon을 선정하고 이에 대한 연구 결과를 웹 콘텐츠로 만들어 구현하였다.</p>
+        </div>
+        <div class="contents" id="content6">
+            <img src="./img/etc5.jpg" width="800px" >
+            <h2>3CE 프로모션 디자인</h2>
+            <p>웹에서 보여지는 프로모션 페이지를 디자인하였다. 3CE의 감성적인 분위기를 살려 디자인하고, 이벤트를 효과적으로 전달하도록 디자인하였다.</p>
+        </div>
+        <div id="content7">
+            <img src="./img/clear.png" width="10px">
+        </div>
+    </div>
+</body>
+</html>
